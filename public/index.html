@@ -16,19 +16,38 @@
              font-size: 13pt;
          }
          .container {
-             position: relative;
-             background-color: white;
+             display:flex;
+             flex-wrap: wrap;
+             align-items: center;
              margin: 0 auto;
-             padding: 50px;
-             border-radius: 6px;
              width: 75%;
+             border-radius: 6px;
+             background-color: white;
+             padding: 50px;
+         }
+         .column {
+             min-width: 400px;
+             min-height: 400px;
+             width: 50%;
+             flex-grow: 1;
+         }
+         .extra {
+             margin-top: 20px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
          }
          .picture {
-             width:30%;
+             width:100%;
              display:block;
              margin:auto;
              border-radius: 5px;
              margin-bottom: 30px;
+         }
+         .text {
+             margin: 0 50px;
+             padding: 20px 0;
          }
          h1 {
              text-align: center;
@@ -36,35 +55,34 @@
              font-size: 30pt;
              font-weight: bold;
          }
+         .blog {margin-bottom: 40px;}
+
          .blog a {
              margin: 0 auto;
-             position: absolute;
-             top: 55px;
-             right: 10px;
              text-align: center;
              text-decoration: none;
              color: white;
              width: 100px;
              background-color: #ffcd69;
              border-radius: 5px;
-             padding: 15px 0;
+             padding: 15px;
          }
          .blog a:hover {
              background-color: #fbd68d;
          }
          .blog i {
-             padding-left: 8px;
+             padding: 10px;
          }
          .contact-me {
              margin: 0 auto;
              text-align: center;
              width: 180px;
-             background-color: #4875b4;
+             background-color: #0096ff;
              border-radius: 5px;
              padding: 15px 0;
          }
          .contact-me:hover {
-             background-color: #4099ff;
+             background-color: #0fdeff;
          }
          .contact-me a {
              text-decoration: none;
@@ -73,17 +91,12 @@
          .contact-me i {
              padding-left: 8px;
          }
-         .text {
-             margin: 0 50px;
-             padding: 20px;
-         }
+
          #social {
-             position: absolute;
-             top: 15px;
-             right: 15px;
+             margin: 20px;
          }
-         .fa-google-plus-square {
-             color:#d6492c;
+         #social a {
+             padding: 10px;
          }
          .fa-github {
              color: black;
@@ -94,9 +107,6 @@
          .fa-twitter {
              color: #4099ff;
          }
-         .fa-facebook-square {
-             color: #3b5998;
-         }
          .fa-linkedin-square {
              color: #4875b4;
          }
@@ -104,32 +114,38 @@
     </head>
     <body>
         <div class="container">
-            <h1>Davide Taviani</h1>
-            <p class="blog"><a href="http://davide.im">Blog</a></p>
-            <div id="social">
-                <a href="https://github.com/heliosmaster"><i class="fa fa-github fa-2x"></i></a>
-                <a href="https://gitlab.com/u/helios"><i class="fa fa-gitlab fa-2x"></i></a>
-                <a href="https://twitter.com/Helios"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href="https://plus.google.com/106885346251122953844"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/davidetaviani"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                <a href="https://facebook.com/davide.taviani"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <div class="column">
+                <h1>Davide Taviani</h1>
+
+                <img class="picture" src="davide.jpg">
+                <p class="contact-me">
+                    <a href="mailto:contact@davidetaviani.com">
+                        Get in touch!
+                        <i class="fa fa-envelope-o"></i> </a></p>
             </div>
-            <img class="picture" src="davide.jpg">
-            <p class="contact-me">
-                <a href="mailto:contact@davidetaviani.com">
-                    Get in touch!
-                    <i class="fa fa-envelope-o"></i> </a></p>
-            <div class="text">
-                <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet. I enjoy learning new things, Dungeons & Dragons, and Belgian beers.</p>
-                <p> I am a curious guy with a MSc in Mathematics and I love working in
-                    Clojure.</p>
-                <p> Feel free to take a peek at <a href="https://www.dropbox.com/s/rxyj8q53vobgtjx/cv_Davide.pdf?dl=0">my CV</a>, or drop me a message.
-                    I am always keen on hearing from new people!</p>
-                <!-- <p> On the internet, i'm sometimes known as <em>Helios</em> or <em>Heliosmaster</em>.</p>
-                     <p>I have a background in applied mathematics (parallel
-                     computing, graph
-                     theory, <a href="http://dspace.library.uu.nl/bitstream/handle/1874/285045/thesis.pdf">here</a> is
-                     my MSc thesis on "Iterative Sparse Matrix Partitioning")</p> -->
+            <div class="column">
+                <div class="text">
+                    <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet.</p>
+                    <p>My favorite things are Clojure, Dungeons & Dragons and the outdoors.</p>
+                    <p> Feel free to take a peek at <a href="https://www.dropbox.com/s/rxyj8q53vobgtjx/cv_Davide.pdf?dl=0">my CV</a>, or drop me a message.
+                        I am always keen on hearing from new people!</p>
+
+
+                    <!-- <p> On the internet, i'm sometimes known as <em>Helios</em> or <em>Heliosmaster</em>.</p>
+                         <p>I have a background in applied mathematics (parallel
+                         computing, graph
+                         theory, <a href="http://dspace.library.uu.nl/bitstream/handle/1874/285045/thesis.pdf">here</a> is
+                         my MSc thesis on "Iterative Sparse Matrix Partitioning")</p> -->
+                </div>
+                <div class="extra">
+                    <p class="blog"><a href="http://davide.im">Blog</a></p>
+                    <div id="social">
+                        <a href="https://github.com/heliosmaster"><i class="fa fa-github fa-2x"></i></a>
+                        <a href="https://gitlab.com/u/helios"><i class="fa fa-gitlab fa-2x"></i></a>
+                        <a href="https://twitter.com/Helios"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/davidetaviani"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

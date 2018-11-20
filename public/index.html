@@ -1,152 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Davide Taviani</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Type" content="text/html;
-                          charset=UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Raleway"
-              rel="stylesheet" type="text/css">
-        <style type="text/css">
-         body {
-             background: url(bg.jpg) no-repeat center center fixed;
-             background-size: cover;
-             font-family: 'Raleway', serif;
-             font-size: 13pt;
-         }
-         .container {
-             display:flex;
-             flex-wrap: wrap;
-             align-items: center;
-             margin: 0 auto;
-             width: 75%;
-             border-radius: 6px;
-             background-color: white;
-             padding: 50px;
-         }
-         .column {
-             min-width: 400px;
-             min-height: 400px;
-             width: 50%;
-             flex-grow: 1;
-         }
-         .extra {
-             margin-top: 20px;
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             justify-content: center;
-         }
-         .picture {
-             width:100%;
-             display:block;
-             margin:auto;
-             border-radius: 5px;
-             margin-bottom: 30px;
-         }
-         .text {
-             margin: 0 50px;
-             padding: 20px 0;
-         }
-         h1 {
-             text-align: center;
-             padding-bottom: 20px;
-             font-size: 30pt;
-             font-weight: bold;
-         }
-         .blog {margin-bottom: 40px;}
+  <head>
+    <title>Davide Taviani</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;
+                                             charset=UTF-8">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <style type="text/css">
+      body {
+          background-color: #1E4363;
+          color: #FCF2CB;
+          font-family: 'Roboto Mono', sans-serif;
+          font-size: 16pt;
+      }
+      .container {
+          display:flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 0 auto;
+          width: 75%;
+      }
+      .column {
+          min-width: 400px;
+          min-height: 400px;
+          width: 50%;
+          flex-grow: 1;
+      }
+      .extra {
+          margin: 50px;
+          text-align: center;
+      }
+      .picture {
+          width:100%;
+          display:block;
+          margin:auto;
+          border-radius: 5px;
+          margin-bottom: 30px;
+      }
+      .text {
+          margin: 0 50px;
+          padding: 20px 0;
+      }
+      h1 {
+          text-align: center;
+          padding-bottom: 20px;
+          font-size: 42pt;
+          font-weight: bold;
+      }
 
-         .blog a {
-             margin: 0 auto;
-             text-align: center;
-             text-decoration: none;
-             color: white;
-             width: 100px;
-             background-color: #ffcd69;
-             border-radius: 5px;
-             padding: 15px;
-         }
-         .blog a:hover {
-             background-color: #fbd68d;
-         }
-         .blog i {
-             padding: 10px;
-         }
-         .contact-me {
-             margin: 0 auto;
-             text-align: center;
-             width: 180px;
-             background-color: #0096ff;
-             border-radius: 5px;
-             padding: 15px 0;
-         }
-         .contact-me:hover {
-             background-color: #0fdeff;
-         }
-         .contact-me a {
-             text-decoration: none;
-             color: white;
-         }
-         .contact-me i {
-             padding-left: 8px;
-         }
+      .blog, .cv {
+          margin: 20px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          width: 100px;
+          border-radius: 5px;
+          padding: 15px;
+      }
 
-         #social {
-             margin: 20px;
-         }
-         #social a {
-             padding: 10px;
-         }
-         .fa-github {
-             color: black;
-         }
-         .fa-gitlab {
-             color: #fc6d26;
-         }
-         .fa-twitter {
-             color: #4099ff;
-         }
-         .fa-linkedin-square {
-             color: #4875b4;
-         }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="column">
-                <h1>Davide Taviani</h1>
+      .cv {
+          background-color: #4FB99F;
+      }
+      .blog {
+          background-color: #6C5B7B;
+      }
+      .contact-me {
+          margin: 0 auto;
+          text-align: center;
+          width: 250px;
+          background-color: #BC2D19;
+          border-radius: 5px;
+          padding: 15px 0;
+      }
+      .contact-me:hover {
+          background-color: #902113;
+      }
+      .contact-me a {
+          text-decoration: none;
+          color: white;
+      }
+      .contact-me i {
+          padding-left: 8px;
+      }
 
-                <img class="picture" src="davide.jpg">
-                <p class="contact-me">
-                    <a href="mailto:contact@davidetaviani.com">
-                        Get in touch!
-                        <i class="fa fa-envelope-o"></i> </a></p>
-            </div>
-            <div class="column">
-                <div class="text">
-                    <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet.</p>
-                    <p>My favorite things are Clojure, Dungeons & Dragons and the outdoors.</p>
-                    <p> Feel free to take a peek at <a href="https://www.dropbox.com/s/rxyj8q53vobgtjx/cv_Davide.pdf?dl=0">my CV</a>, or drop me a message.
-                        I am always keen on hearing from new people!</p>
+      #social {
+          margin: 20px;
+          text-align: center;
+      }
+      #social a {
+          padding: 10px;
+          color: #FCF2CB;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h1>Davide Taviani</h1>
 
+        <img class="picture" src="davide.jpg">
+        <p class="contact-me">
+          <a href="mailto:contact@davidetaviani.com">
+            Get in touch!
+            <i class="far fa-envelope"></i> </a></p>
+      </div>
+      <div class="column">
+        <div class="text">
+          <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet.</p>
+          <p>My favorite things are Clojure, Dungeons & Dragons and the outdoors.</p>
 
-                    <!-- <p> On the internet, i'm sometimes known as <em>Helios</em> or <em>Heliosmaster</em>.</p>
-                         <p>I have a background in applied mathematics (parallel
-                         computing, graph
-                         theory, <a href="http://dspace.library.uu.nl/bitstream/handle/1874/285045/thesis.pdf">here</a> is
-                         my MSc thesis on "Iterative Sparse Matrix Partitioning")</p> -->
-                </div>
-                <div class="extra">
-                    <p class="blog"><a href="http://davide.im">Blog</a></p>
-                    <div id="social">
-                        <a href="https://github.com/heliosmaster"><i class="fa fa-github fa-2x"></i></a>
-                        <a href="https://gitlab.com/u/helios"><i class="fa fa-gitlab fa-2x"></i></a>
-                        <a href="https://twitter.com/Helios"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/davidetaviani"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
+          <!-- <p> On the internet, i'm sometimes known as <em>Helios</em> or <em>Heliosmaster</em>.</p>
+               <p>I have a background in applied mathematics (parallel
+                 computing, graph
+                 theory, <a href="http://dspace.library.uu.nl/bitstream/handle/1874/285045/thesis.pdf">here</a> is
+                 my MSc thesis on "Iterative Sparse Matrix Partitioning")</p> -->
         </div>
-    </body>
+        <div class="extra">
+          <a class="cv" href="DavideTaviani.pdf">
+            <i class="far fa-file-pdf fa"></i>
+            <span>CV</span>
+          </a>
+          <a class="blog" href="http://davide.im">Blog</a>
+        </div>
+        <div id="social">
+          <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://gitlab.com/u/helios"><i class="fab fa-gitlab fa-2x"></i></a>
+          <a href="https://twitter.com/Helios"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/davidetaviani"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

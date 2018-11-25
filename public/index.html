@@ -1,138 +1,305 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Davide Taviani</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="Content-Type" content="text/html;
-                                             charset=UTF-8">
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <style type="text/css">
-      body {
-          background-color: #1E4363;
-          color: #FCF2CB;
-          font-family: 'Roboto Mono', sans-serif;
-          font-size: 16pt;
-      }
-      .container {
-          display:flex;
-          flex-wrap: wrap;
-          align-items: center;
-          margin: 0 auto;
-          width: 75%;
-      }
-      .column {
-          min-width: 400px;
-          min-height: 400px;
-          width: 50%;
-          flex-grow: 1;
-      }
-      .extra {
-          margin: 50px;
-          text-align: center;
-      }
-      .picture {
-          width:100%;
-          display:block;
-          margin:auto;
-          border-radius: 5px;
-          margin-bottom: 30px;
-      }
-      .text {
-          margin: 0 50px;
-          padding: 20px 0;
-      }
-      h1 {
-          text-align: center;
-          padding-bottom: 20px;
-          font-size: 42pt;
-          font-weight: bold;
-      }
+    <head>
+        <title>Davide Taviani</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;
+                          charset=UTF-8">
+        <link rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+              integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+              crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <style type="text/css">
+         body {
+             font-family: 'Roboto Mono', sans-serif;
+             font-size: 1.5em;
+             margin: 0;
+         }
+         .part {
+             display:flex;
+             flex-wrap: wrap;
+             align-items: center;
+             padding: 0 50px 50px 50px;
+         }
+         .block {
+             padding: 100px 0;
+             width: 100%;
+             display:flex;
+             flex-wrap: wrap;
+             align-items: center;
+         }
+         hr {
+             border: 0;
+             height: 1px;
+             background: black;
 
-      .blog, .cv {
-          margin: 20px;
-          text-align: center;
-          text-decoration: none;
-          color: white;
-          width: 100px;
-          border-radius: 5px;
-          padding: 15px;
-      }
+             width: 100%;
+         }
+         .header {
+             width: 100%;
+             text-align: center;
+             margin-bottom: 0;
+         }
+         .text-centered {
+             text-align: center;
+         }
+         .wrap-reverse {
+             flex-wrap: wrap-reverse;
+         }
+         .intro {
+             background-color: #1E4363;
+             min-height: 100vh;
+             color: #FCF2CB;
+         }
+         .clojure-link {
+             color: #BDD3DE;
+         }
+         .clojure {
+             color: #001747;
+             background-color: #BDD3DE;
+         }
+         h2 {
+             font-size: 1.5em;
+         }
+         .showcase {
+             background-color:#37AFA8;
+         }
+         .showcase a{
+             color:white;
+         }
+         .dnd-link {
+             color: #BC2D19;}
+         .dnd {
+             background-color: #BC2D19;
+             color: #FFB00D;
+         }
+         .skills-list{
+             margin: 50px 0;
+         }
+         .skills-list li{
+             margin: 25px;
+         }
+         .column {
+             min-width: 500px;
+             width: 50%;
+             flex-grow: 1;
+         }
+         .extra {
+             margin: 50px;
+             text-align: center;
+         }
+         .picture {
+             width:100%;
+             display:block;
+             margin:auto;
+             border-radius: 5px;
+             margin-bottom: 30px;
+         }
+         .text {
+             margin: 0 50px;
+             padding: 20px 0;
+         }
+         .page-title {
+             text-align: center;
+             padding-bottom: 20px;
+             font-size: 2.5em;
+             font-weight: bold;
+         }
+         .buzzword {
+             //text-decoration: underline;
+             //font-style: italic;
+         }
 
-      .cv {
-          background-color: #4FB99F;
-      }
-      .blog {
-          background-color: #6C5B7B;
-      }
-      .contact-me {
-          margin: 0 auto;
-          text-align: center;
-          width: 250px;
-          background-color: #BC2D19;
-          border-radius: 5px;
-          padding: 15px 0;
-      }
-      .contact-me:hover {
-          background-color: #902113;
-      }
-      .contact-me a {
-          text-decoration: none;
-          color: white;
-      }
-      .contact-me i {
-          padding-left: 8px;
-      }
+         .blog, .cv {
+             margin: 20px;
+             text-align: center;
+             text-decoration: none;
+             color: white;
+             width: 100px;
+             border-radius: 5px;
+             padding: 15px;
+         }
 
-      #social {
-          margin: 20px;
-          text-align: center;
-      }
-      #social a {
-          padding: 10px;
-          color: #FCF2CB;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="column">
-        <h1>Davide Taviani</h1>
+         .cv {
+             background-color: #4FB99F;
+             color: white;
+         }
+         .blog {
+             background-color: #6C5B7B;
 
-        <img class="picture" src="davide.jpg">
-        <p class="contact-me">
-          <a href="mailto:contact@davidetaviani.com">
-            Get in touch!
-            <i class="far fa-envelope"></i> </a></p>
-      </div>
-      <div class="column">
-        <div class="text">
-          <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet.</p>
-          <p>My favorite things are Clojure, Dungeons & Dragons and the outdoors.</p>
+         }
+         .contact-me {
+             margin: 0 auto;;
+             text-align: center;
+             width: 350px;
+             font-size: 1em;
+             background-color: #BC2D19;
+             border-radius: 5px;
+             padding: 15px 0;
+         }
+         .contact-me:hover {
+             background-color: #902113;
+         }
+         .contact-me a {
+             text-decoration: none;
+             color: white;
+         }
+         .contact-me i {
+             padding-left: 8px;
+         }
 
-          <!-- <p> On the internet, i'm sometimes known as <em>Helios</em> or <em>Heliosmaster</em>.</p>
-               <p>I have a background in applied mathematics (parallel
-                 computing, graph
-                 theory, <a href="http://dspace.library.uu.nl/bitstream/handle/1874/285045/thesis.pdf">here</a> is
-                 my MSc thesis on "Iterative Sparse Matrix Partitioning")</p> -->
+         #social {
+             margin: 20px;
+             text-align: center;
+         }
+         #social a {
+             padding: 10px;
+             color: #FCF2CB;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="part intro">
+            <div class="column">
+                <h1 class="page-title">Davide Taviani</h1>
+
+                <img class="picture" src="davide.jpg">
+                <p class="contact-me">
+                    <a href="mailto:contact@davidetaviani.com">
+                        Get in touch!
+                        <i class="far fa-envelope"></i> </a></p>
+            </div>
+            <div class="column">
+                <div class="text">
+                    <p>Hi! I am Davide, I live in Amsterdam and I build stuff for the internet.</p>
+                    <p>My favorite things are <a class="clojure-link" href="#clojure">Clojure</a>, Dungeons & Dragons, open-source software/hardware, the outdoors and photography.</p>
+                </div>
+                <div class="extra">
+                    <a class="cv" href="DavideTaviani.pdf">
+                        <i class="far fa-file-pdf fa"></i>
+                        <span>CV</span>
+                    </a>
+                    <a class="blog" href="http://davide.im">Blog</a>
+                </div>
+                <div id="social">
+                    <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"> </i></a>
+                    <a href="https://gitlab.com/u/helios"><i class="fab fa-gitlab fa-2x"> </i></a>
+                    <a href="https://twitter.com/Helios"><i class="fab fa-twitter fa-2x"> </i></a>
+                    <a href="https://www.linkedin.com/in/davidetaviani"><i class="fab fa-linkedin fa-2x"> </i></a>
+                </div>
+            </div>
         </div>
-        <div class="extra">
-          <a class="cv" href="DavideTaviani.pdf">
-            <i class="far fa-file-pdf fa"></i>
-            <span>CV</span>
-          </a>
-          <a class="blog" href="http://davide.im">Blog</a>
+        <div class="part clojure" id="clojure">
+            <h1 class="header">Clojure developer, mathematician</h1>
+            <div class="text">
+                <!-- <p>After a brief stint as a Rails developer, I stumbled upon this language, and it was love shortly after.</p> -->
+                <p>I've spent the last 5 years working exclusively with Clojure / Clojurescript doing a variety of things as a full-stack developer, such as:
+                    <ul class="skills-list">
+                        <li>implementing a continuous delivery pipeline using Gitlab CI and Docker</li>
+                        <li>configuring and managing bare-metal using <span class="buzzword">Ansible</span> as well as AWS infra using CloudFormation</li>
+                        <li>co-authoring and implementing an event-sourcing framework with CQRS in the backend,</li>
+                        <li>frontend work using <span class="buzzword">reagent</span> and <span class="buzzword">re-frame</span></li>
+                    </ul></p>
+                <p>Apart from these technical things, I enjoy very much teaching Clojure to people, especially to Junior Developers:
+                    there's nothing as rewarding as seeing their brains finally "click" and resonate with the principles of functional programming.</p>
+                <hr>
+                <p>My education is in Mathematics, and I received a BSc from University of Ferrara in Italy and my MSc. from Utrecht University, The Netherlands.</p>
+                <p>My main interests in this field are in discrete optimization, graph theory and parallel computing.</p>
+            </div>
         </div>
-        <div id="social">
-          <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://gitlab.com/u/helios"><i class="fab fa-gitlab fa-2x"></i></a>
-          <a href="https://twitter.com/Helios"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/davidetaviani"><i class="fab fa-linkedin fa-2x"></i></a>
+        <div class="part showcase" id="showcase">
+            <h1 class="header">Projects and experiments</h1>
+            <div class="block">
+                <div class="column text-centered">
+                    <h2><a href="https://sous-chef.davidetaviani.com">Sous-chef</a></h2>
+                    <img src="sous-chef.jpg" width="80%">
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <p>This project, which started as an excuse to teach Clojure to <a href="http://kleopatra.me">my partner</a> (and ended up with her having a job as a Clojure developer!) is a recipe search engine  which you can use to get inspiration on what to cook, based on which ingredients you have availble at home.</p>
+                        <p>The application incorporates data from various recipes websites (currently available in Italian and English) and is aimed at coping with the fact that the internal search functionality of such websites is rather limited and seldom incorporates the types of ingredients included and the diets which a recipe might be suitable for.</p>
+                        <p>After reaching version 1.0, the project is currently fully functional as we figure out whether there is a viable business case.</p>
+                        <p> If you want to participate to the testing, contact me!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="block">
+                <div class="column text-centered">
+                    <h2>Studyflow</h2>
+                    <img src="studyflow.jpg" width="70%">
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <p>For this ed-tech startup in Amsterdam, we wrote <a href="">rill-event-sourcing</a>, a CQRS/event-sourcing toolkit that lies at the heart of the system used by more than 100k students, and handling a history of more than 600M+ events.</p>
+                        <p>This company was the one in which I had the chance to fully explore all aspects of development, ranging from the bare-metal setup of our PostgreSQL instance, to research and implementation of a gamification system, to frontend work with reagent and re-frame.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="block wrap-reverse">
+                <div class="column">
+                    <div class="text">
+                        <p>For this logistic startup, I started the Data department and managed a team of Data scientist and designed / engineered the data pipeline.</p>
+                        <p>I wrote the event-handler which connected to the Kafka event-store and populated the analytics database, which the team used to perform research and prototyping of functions to be included in the main application.</p>
+
+                    </div>
+
+                </div>
+                <div class="column text-centered">
+                    <h2>Synple</h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="block">
+                <div class="column text-centered">
+                    <h2>Bandemonium (<a href="https://gitlab.com/die-schmetterlinge/Bandemonium">source</a>)</h2>
+                    <img src="bandemonium0.jpg" width="80%">
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <p>This was an entry to the Clojure cup 2015 and is a synthwave-themed music performance application.</p>
+                        <p>You can choose between drums, bass and synth and use your computer keyboard (or use your own MIDI keyboard!) to play retro-futuristic sounds</p>
+                        <p>This was also used as a stress test for <a href="https://gitlab.com/j-pb/franz">franz</a> a clojurescript persistent event-log library (inspired by Kafka) that we had built at Studyflow.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="block wrap-reverse">
+                <div class="column">
+                    <div class="text">
+                        <p>This project combines my interests for open-source software and open hardware and contains all the material required to build a weather station with Arduino, including an external unit for outside data and 3d printed enclosures.</p>
+                    </div>
+                </div>
+                <div class="column text-centered"><h2>Weather Station (<a href="https://github.com/Heliosmaster/weather-station">source</a>)</h2>
+                    <img width="70%" src="weather-station.jpg">
+                </div>
+            </div>
+            <hr>
+            <div class="block">
+                <div class="column text-centered">
+                    <h2><a href="http://davidetaviani.com/harmony">Harmony</a> (<a href="https://gitlab.com/helios/harmony">source</a>)</h2>
+                    <img src="harmony.jpg" width="35%">
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <p>This simple game written with re-frame is a reintepretation of a classic Flash game, <a href="https://www.kongregate.com/games/ahnt/loops-of-zen">Loops of Zen</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="block wrap-reverse">
+                <div class="column">
+                    <div class="text">
+                        <p>This is a simple program that runs in the background and acts as a bridge between GitLab and Clubhouse.io.</p>
+                        <p> It ensures that the stories in the project management tools are updated following interactions on Gitlab.</p>
+                    </div>
+                </div>
+                <div class="column text-centered"><h2>Tanuki Lodge (<a href="https://github.com/Heliosmaster/tanuki-lodge">source</a>)</h2></div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

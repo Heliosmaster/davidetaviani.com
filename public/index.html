@@ -87,7 +87,7 @@
              flex-grow: 1;
          }
          .extra {
-             margin: 50px;
+             margin: 100px;
              text-align: center;
          }
          .picture {
@@ -112,8 +112,8 @@
              //font-style: italic;
          }
 
-         .blog, .cv {
-             margin: 20px;
+         .blog, .cv, .contact-me {
+             margin: 25px;
              text-align: center;
              text-decoration: none;
              color: white;
@@ -131,31 +131,19 @@
 
          }
          .contact-me {
-             margin: 0 auto;;
-             text-align: center;
-             width: 350px;
-             font-size: 1em;
              background-color: #BC2D19;
-             border-radius: 5px;
-             padding: 15px 0;
+             color: white;
          }
          .contact-me:hover {
              background-color: #902113;
          }
-         .contact-me a {
-             text-decoration: none;
-             color: white;
-         }
-         .contact-me i {
-             padding-left: 8px;
-         }
 
          #social {
-             margin: 20px;
+             margin: 30px;
              text-align: center;
          }
          #social a {
-             padding: 10px;
+             padding: 15px;
              color: #FCF2CB;
          }
         </style>
@@ -166,10 +154,6 @@
                 <h1 class="page-title">Davide Taviani</h1>
 
                 <img class="picture" src="davide.jpg">
-                <p class="contact-me">
-                    <a href="mailto:contact@davidetaviani.com">
-                        Get in touch!
-                        <i class="far fa-envelope"></i> </a></p>
             </div>
             <div class="column">
                 <div class="text">
@@ -182,6 +166,9 @@
                         <span>CV</span>
                     </a>
                     <a class="blog" href="http://davide.im">Blog</a>
+                    <a class="contact-me" href="mailto:contact@davidetaviani.com">
+                        Get in touch!
+                        <i class="far fa-envelope"></i> </a>
                 </div>
                 <div id="social">
                     <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"> </i></a>
@@ -198,6 +185,7 @@
                     <ul class="skills-list">
                         <li>co-authoring and implementing an event-sourcing framework with CQRS in the backend,</li>
                         <li>frontend work using <span class="buzzword">reagent</span> and <span class="buzzword">re-frame</span></li>
+                        <li>used re-natal to create a react-native application</li>
                     </ul></p>
 
                 <p>I've also done my fair share of devops work, performing some tasks such as:
@@ -293,6 +281,7 @@
                 <div class="column">
                     <div class="text">
                         <p>This game written with re-frame is a reimplementation of a classic Flash game, <a href="https://www.kongregate.com/games/ahnt/loops-of-zen">Loops of Zen</a>.</p>
+                        <p>Other than the version you can try in your browser, I have also made a React-Native application using re-natal.</p>
                     </div>
                 </div>
             </div>

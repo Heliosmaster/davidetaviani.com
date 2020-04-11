@@ -6,316 +6,46 @@
         <meta http-equiv="Content-Type" content="text/html;
                           charset=UTF-8">
         <link rel="stylesheet"
-              href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-              integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-              crossorigin="anonymous">
+              href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-        <style type="text/css">
-         body {
-             font-family: 'Roboto Mono', sans-serif;
-             font-size: 1.3em;
-             margin: 0;
-         }
-         .part {
-             display:flex;
-             flex-wrap: wrap;
-             align-items: center;
-             padding: 0 50px 50px 50px;
-         }
-         .block {
-             padding: 100px 0;
-             width: 100%;
-             display:flex;
-             flex-wrap: wrap;
-             align-items: center;
-         }
-         hr {
-             border: 0;
-             height: 1px;
-             background: black;
-
-             width: 100%;
-         }
-         .header {
-             width: 100%;
-             text-align: center;
-             margin-bottom: 0;
-         }
-         .text-centered {
-             text-align: center;
-         }
-         .wrap-reverse {
-             flex-wrap: wrap-reverse;
-         }
-         .intro {
-             background-color: #1E4363;
-             min-height: 100vh;
-             color: #FCF2CB;
-         }
-         .clojure-link {
-             color: #BDD3DE;
-         }
-         .clojure {
-             background-color: #ddfddc;
-         }
-         h2 {
-             font-size: 1.5em;
-         }
-         .showcase {
-             background-color: #BCEFF9;
-         }
-         .showcase a{
-             color: #FF7F72;
-         }
-         .dnd-link {
-
-             color: #BC2D19;}
-         .dnd {
-             background-color: #BC2D19;
-             color: #FFB00D;
-         }
-         .skills-list{
-             margin: 50px 0;
-         }
-         .skills-list li{
-             margin: 25px;
-         }
-         .column {
-             min-width: 500px;
-             width: 50%;
-             flex-grow: 1;
-         }
-         .extra {
-             margin: 15px 100px;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             flex-wrap: wrap;
-         }
-         .picture {
-             width:100%;
-             display:block;
-             margin:auto;
-             border-radius: 5px;
-             margin-bottom: 30px;
-         }
-         .text {
-             margin: 0 70px;
-             padding: 20px 0;
-         }
-         .page-title {
-             text-align: center;
-             font-size: 2.5em;
-             font-weight: bold;
-         }
-         .buzzword {
-
-             //text-decoration: underline;
-             //font-style: italic;
-         }
-
-         .blog, .cv, .contact-me {
-             margin: 15px;
-             text-align: center;
-             text-decoration: none;
-             color: white;
-             border-radius: 5px;
-             padding: 15px;
-         }
-
-         .cv {
-             background-color: #4FB99F;
-             color: white;
-         }
-         .blog {
-             background-color: #6C5B7B;
-
-         }
-
-         .contact-me {
-             background-color: #BC2D19;
-             color: white;
-         }
-         .contact-me:hover {
-             background-color: #902113;
-         }
-
-         #social {
-             margin: 30px;
-             text-align: center;
-         }
-         #social a {
-             padding: 15px;
-             color: #FCF2CB;
-         }
-        </style>
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <nav class="navbar">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="projects.html">Projects</a>
+        </nav>
         <div class="part intro">
             <div class="column">
                 <h1 class="page-title">Davide Taviani</h1>
 
-                <img class="picture" src="davide.jpg">
+                <img class="picture" src="images/davide.jpg">
             </div>
             <div class="column">
                 <div class="text">
                     <p>Hi! I am Davide, I build stuff for the internet.</p>
                     <p>My favorite things are <a class="clojure-link" href="#clojure">Clojure</a>, Dungeons & Dragons, open-source software/hardware, the outdoors and photography.</p>
                 </div>
-                <div class="extra">
-                    <a class="cv" href="DavideTaviani.pdf">
-                        <i class="far fa-file-pdf fa"></i>
-                        <span>CV</span>
-                    </a>
 
-                </div>
-                <div class="extra">
+                <div class="action">
                     <a class="contact-me" href="mailto:contact@davidetaviani.com">
                         Get in touch!
                         <i class="far fa-envelope"></i> </a>
                 </div>
+
                 <div id="social">
-                    <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"> </i></a>
-                    <a href="https://gitlab.com/u/helios"><i class="fab fa-gitlab fa-2x"> </i></a>
-                    <a href="https://twitter.com/Helios"><i class="fab fa-twitter fa-2x"> </i></a>
-                    <a href="https://www.linkedin.com/in/davidetaviani"><i class="fab fa-linkedin fa-2x"> </i></a>
+                    <a class="cv-link" href="DavideTaviani.pdf">
+                        <span><Hey></Hey></span>
+                        <svg class="cv-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <g><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"><path d="M1719.3,4993.2c-170.4-61.3-302.5-193.4-367.6-361.8c-26.8-72.8-28.7-518.8-24.9-4550.8l5.7-4470.4l51.7-88c67-114.9,199.1-233.6,304.4-273.8c78.5-28.7,329.3-30.6,3338.9-26.8c3097.7,5.7,3258.5,7.7,3317.9,40.2c113,61.3,220.2,174.2,275.7,291l53.6,114.9v3783.1c0,3390.6-3.8,3792.7-30.6,3876.9c-26.8,84.2-101.5,164.6-788.8,848.1c-583.9,578.2-783,763.9-855.8,798.4l-95.7,45.9l-2555.9-1.9C2247.7,5018.1,1778.6,5014.3,1719.3,4993.2z M6626.2,3890.4c0-802.2,3.8-832.8,113-888.3c49.8-26.8,162.7-30.6,796.4-30.6h737.1V-662.3c0-3237.5-3.8-3639.5-30.6-3675.9l-28.7-42.1H4998.8c-2896.7,0-3216.4,3.8-3243.2,30.6c-26.8,26.8-30.6,457.6-30.6,4457c0,4621.7-1.9,4468.5,76.6,4497.2c15.3,5.7,1108.5,11.5,2427.6,11.5l2397,1.9V3890.4z M7564.3,3894.3c273.8-268,497.8-494,497.8-503.5c0-11.5-202.9-15.3-511.2-13.4l-513.1,5.7l-5.7,503.5c-1.9,331.2,1.9,503.5,15.3,497.8C7056.9,4382.5,7290.5,4160.4,7564.3,3894.3z"/><path d="M4462.8,1300.1c-530.3-180-830.9-783-650.9-1303.8c53.6-157,122.5-269.9,245.1-398.2c197.2-206.8,405.9-302.5,664.3-302.5c247,0,522.7,120.6,675.8,294.8c107.2,124.4,68.9,287.2-80.4,336.9c-80.4,26.8-151.3,1.9-241.2-86.1C4826.5-400,4391.9-327.3,4234.9-17.1c-86.2,166.6-95.7,405.9-28.7,605c47.9,135.9,199.1,283.3,333.1,323.5c206.8,61.3,371.4,26.8,534.1-112.9c70.8-61.3,118.7-86.2,157-86.2c124.4,0,206.8,82.3,208.7,206.8c0,99.6-67,180-239.3,281.4C4954.8,1346,4698.3,1380.5,4462.8,1300.1z"/><path d="M5799.1,1248.4c-59.3-45.9-99.6-137.8-86.2-193.4c5.8-21.1,158.9-405.9,342.7-853.9c202.9-499.7,348.4-830.9,377.2-859.6c59.3-59.4,185.7-63.2,256.5-7.7c36.4,28.7,130.2,245.1,386.7,884.5c371.4,928.5,369.5,924.7,256.6,1018.5c-68.9,59.3-155.1,65.1-237.4,15.3c-49.8-30.6-86.2-107.2-285.3-608.8c-124.4-314-233.6-578.2-239.3-585.8C6563,48,6450,306.4,6319.8,628.1c-208.7,516.9-243.1,591.6-294.8,622.2C5948.4,1296.3,5858.5,1296.3,5799.1,1248.4z"/><path d="M2728.2-1527.7c-126.4-51.7-162.7-229.7-67-327.4l55.5-55.5h2280.2h2280.2l59.3,53.6c49.8,44,61.3,68.9,61.3,130.2c0,95.7-47.9,170.4-124.4,197.2C7200.5-1504.7,2789.5-1502.8,2728.2-1527.7z"/><path d="M2670.8-2818.1c-93.8-93.8-86.1-218.2,19.1-302.5c38.3-30.6,187.6-34.5,2310.8-34.5c2247.6,0,2272.5,0,2320.4,38.3c72.7,57.4,99.6,153.2,63.2,235.5c-55.5,137.8,105.3,128.3-2397,128.3H2735.9L2670.8-2818.1z"/></g></g>
+                        </svg>
+
+                        <a href="https://github.com/heliosmaster"><i class="fab fa-github fa-2x"> </i></a>
+                        <a href="https://gitlab.com/u/helios"><i class="fab fa-gitlab fa-2x"> </i></a>
+                        <a href="https://twitter.com/Helios"><i class="fab fa-twitter fa-2x"> </i></a>
+                        <a href="https://www.linkedin.com/in/davidetaviani"><i class="fab fa-linkedin fa-2x"> </i></a>
                 </div>
 
-            </div>
-        </div>
-        <div class="part clojure" id="clojure">
-            <h1 class="header">Senior Clojure Developer, mathematician</h1>
-            <div class="text">
-                <p>I've spent the last 5 years doing web development exclusively with Clojure / Clojurescript doing a variety of things, such as:
-                    <ul class="skills-list">
-                        <li>working on the backend of an event-sourcing + CQRS framework</li>
-                        <li>frontend work using <span class="buzzword">re-frame</span> and <span class="buzzword">reagent</span></li>
-                        <li>building a data pipeline upon Kafka</li>
-                        <li>experimenting with <span class="buzzword">re-natal</span> to create a React Native application (a mobile version of <a href="#harmony">this</a>)</li>
-                    </ul></p>
-
-                <p>I've also done my fair share of devops work, performing some tasks such as:
-                    <ul class="skills-list">
-                        <li>implementing a continuous delivery pipeline using Gitlab CI and Docker</li>
-                        <li>configuring and managing bare-metal servers</li>
-                        <li>creating and managing of AWS infrastructure, using <span class="buzzword">Ansible</span>, <span class="buzzword">Packer</span> and <span class="buzzword">CloudFormation</span></li>
-                    </ul>
-                </p>
-                <p>Apart from these technical things, I enjoy very much teaching Clojure to people, especially to Junior Developers:
-                    there's nothing as rewarding as seeing their brains finally "click" and resonate with the beauty and simplicity of functional programming.</p>
-                <hr>
-                <p>My education is in (Applied) Mathematics, and I received a BSc from University of Ferrara in Italy and my MSc. (with specialization in Scientific Computing) from Utrecht University, The Netherlands.</p>
-                <p>My main interests in this field are in discrete optimization, graph theory and parallel computing.</p>
-            </div>
-        </div>
-        <div class="part showcase" id="showcase">
-            <h1 class="header">Projects and experiments</h1>
-            <div class="block">
-                <div class="column text-centered">
-                    <h2><a href="https://souschef.eu">Sous-chef</a></h2>
-                    <img src="sous-chef.jpg" width="80%">
-                </div>
-                <div class="column">
-                    <div class="text">
-                        <p>This project, which started as an excuse to teach Clojure to <a href="http://kleopatra.me">my partner</a> (and ended up with her having a job as a Clojure developer!) is a recipe search engine  which you can use to get inspiration on what to cook, based on which ingredients you have available at home.</p>
-                        <p>The application (currently available in English and Italian) incorporates data from various recipes websites and is essentially a "better recipe search engine". Often, in fact, the search engine on such websites lacks more advanced functionalities, such as a fine-grained tuning of dietary preferences or requirements and availability of ingredients.</p>
-                        <p>After shipping a stable version, the project is currently used privately until we figure out whether there is a viable business case.</p>
-                        <p> If you want to participate to the testing, contact me!</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="block wrap-reverse">
-                <div class="column">
-                    <div class="text">
-                        <p>At WorksHub, previously known as Functional Works, I have been a full-stack Clojure(script) developer, working with re-frame to improve the reach of the platform.</p>
-                        <p>During this project, I mostly focused on cross-platform rendering, writing the same code in cljc for frontend and backend, using re-frame in both cases! It was a great chance to see the beauty of writing cljc code and using re-frame for server-side rendered pages and the normal SPA. This has had a tremendous impact in page speed and, ultimately, in SEO performance.</p>
-                        <p>I have also spent quite some time working with the integration with GitHub and using Open source Issues for hiring, and I have created an <a href="https://github.com/workshub/flow-bot"> Open Source Clojure bot</a> that keeps repos synchronized..</p>
-                    </div>
-                </div>
-                <div class="column text-centered">
-                    <h2><a href="https://www.works-hub.com"> WorksHub</a></h2>
-
-                    <img src="workshub.png" width="70%">
-                </div>
-            </div>
-            <hr>
-            <div class="block">
-                <div class="column text-centered">
-                    <h2><a href="https://www.studyflow.nl"> Studyflow</a></h2>
-                    <img src="studyflow.jpg" width="70%">
-                </div>
-                <div class="column">
-                    <div class="text">
-                        <p>For this ed-tech startup in Amsterdam, we wrote <a href="">rill-event-sourcing</a>, a CQRS/event-sourcing toolkit that lies at the heart of the system used by more than 100k students, and handling a history of more than 600M+ events.</p>
-                        <p>This company was the one in which I had the chance to fully explore all aspects of development, ranging from the bare-metal setup of our PostgreSQL instance, to research and implementation of a gamification system, to frontend work with reagent and re-frame.</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="block wrap-reverse">
-                <div class="column">
-                    <div class="text">
-                        <p>For this logistic startup, I started the Data department and managed a team of Data scientist and designed / engineered the data pipeline.</p>
-                        <p>I wrote the event-handler which connected to the Kafka event-store and populated the analytics database, which the team used to perform research and prototyping of functions to be included in the main application.</p>
-
-                    </div>
-
-                </div>
-                <div class="column text-centered">
-                    <h2><a href="https://www.synple.eu"> Synple</a></h2>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="block">
-                <div class="column text-centered">
-                    <h2><a href="https://bandemonium.davidetaviani.com">Bandemonium</a> (<a href="https://gitlab.com/die-schmetterlinge/Bandemonium">source</a>)</h2>
-                    <img src="bandemonium0.jpg" width="80%">
-                </div>
-                <div class="column">
-                    <div class="text">
-                        <p>This was an entry to the Clojure cup 2015 and is a synthwave-themed music performance application.</p>
-                        <p>You can choose between drums, bass and synth and use your computer keyboard (or use your own MIDI keyboard!) to play retro-futuristic sounds.</p>
-                        <p>This was also used as a stress test for <a href="https://gitlab.com/j-pb/franz">franz</a> a clojurescript persistent event-log library (inspired by Kafka) that we had built at Studyflow.</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="block wrap-reverse">
-                <div class="column">
-                    <div class="text">
-                        <p>This project combines my interests for open-source software and open hardware into a weather station with an external unit for outdoor data.</p>
-                        <p>The source includes the hardware schematics for the prototype, the Arduino software and the 3d-printed enclosure I designed.</p>
-                    </div>
-                </div>
-                <div class="column text-centered"><h2>Weather Station (<a href="https://github.com/Heliosmaster/weather-station">source</a>)</h2>
-                    <img width="70%" src="weather-station.jpg">
-                </div>
-            </div>
-            <hr>
-            <div class="block" id="harmony">
-                <div class="column text-centered">
-                    <h2><a href="http://davidetaviani.com/harmony">Harmony</a> (<a href="https://gitlab.com/helios/harmony">source</a>)</h2>
-                    <img src="harmony.jpg" width="35%">
-                </div>
-                <div class="column">
-                    <div class="text">
-                        <p>This game written with re-frame is a reimplementation of a classic Flash game, <a href="https://www.kongregate.com/games/ahnt/loops-of-zen">Loops of Zen</a>.</p>
-                        <p>Other than the version you can try in your browser, I have also made a React-Native application using re-natal.</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="block wrap-reverse">
-                <div class="column">
-                    <div class="text">
-                        <p>This is a simple program that runs in the background and acts as a bridge between GitLab and <a href="https://clubhouse.io">Clubhouse.io</a>.</p>
-                        <p> It ensures that the stories in the project management tool are updated following interactions on Gitlab.</p>
-                    </div>
-                </div>
-                <div class="column text-centered"><h2>Tanuki Lodge (<a href="https://github.com/Heliosmaster/tanuki-lodge">source</a>)</h2></div>
             </div>
         </div>
     </body>

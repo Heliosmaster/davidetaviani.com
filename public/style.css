@@ -13,7 +13,7 @@ body {
     font-size: 32px;
 }
 .navbar-item {
-    padding: 10px 20px;
+    margin: 10px 20px;
 }
 
 a {

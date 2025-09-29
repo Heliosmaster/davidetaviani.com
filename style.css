@@ -1,0 +1,165 @@
+body {
+    background-color: #1E4363;
+    color: #FCF2CB;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 10%;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    font-size: 32px;
+}
+.navbar-item {
+    margin: 10px 20px;
+}
+
+a {
+    color: #BDD3DE;
+}
+
+.block h2 {margin: 30px 70px;}
+
+.text {
+    margin: 0 70px;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.action {
+    margin: 15px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.part {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.block {
+    padding: 100px 0;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #FCF2CB;
+
+    width: 100%;
+}
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.text-centered {
+    text-align: center;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.intro {
+    background-color: #1E4363;
+    color: #FCF2CB;
+}
+.clojure-link {
+    color: #BDD3DE;
+}
+.clojure {
+    background-color: #ddfddc;
+}
+h2 {
+    font-size: 1.5em;
+}
+.showcase {
+    background-color: #BCEFF9;
+}
+.showcase a{
+    color: #FF7F72;
+}
+.dnd-link {
+
+    color: #BC2D19;}
+.dnd {
+    background-color: #BC2D19;
+    color: #FFB00D;
+}
+.skills-list{
+    margin: 50px 0;
+}
+.skills-list li{
+    margin: 25px;
+}
+.column {
+    min-width: 500px;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.picture {
+    width:100%;
+    display:block;
+    margin:auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.blog, .cv, .contact-me {
+    margin: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cv {
+    background-color: #4FB99F;
+    color: white;
+}
+.blog {
+    background-color: #6C5B7B;
+
+}
+
+.contact-me {
+    background-color: #BC2D19;
+    color: white;
+}
+.contact-me:hover {
+    background-color: #902113;
+}
+
+#social {
+    margin: 30px;
+    text-align: center;
+}
+#social a {
+    padding: 15px;
+    color: #FCF2CB;
+}
+.cv-link {
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+}
+.cv-icon {
+    fill: #FCF2CB;
+    margin-bottom: -6px;
+}
